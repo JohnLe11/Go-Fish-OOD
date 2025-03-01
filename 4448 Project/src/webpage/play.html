@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Go Fish</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: lightblue;
+      }
+      
+      input {
+        width: 300px;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 50px;
+        text-align: center;
+      }
+      
+      #output {
+        width: 300px;
+        height: 100px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px; /* added margin */
+        background-color: white; /* added background color */
+        padding: 10px; /* added padding */
+        overflow-y: scroll; /* added scroll bar */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output"></div> <!-- added output section -->
+    <input type="text" placeholder="Enter your text here">
+    
+    <script>
+      // JavaScript code to display output in the white box
+      var output = document.getElementById("output");
+      
+      // Your Java code goes here
+      // Example:
+      output.innerHTML = "Hello, world!";
+    </script>
+  </body>
+</html>

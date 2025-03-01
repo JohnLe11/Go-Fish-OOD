@@ -1,0 +1,147 @@
+
+<head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <title>Create Account</title>
+
+    <link rel="icon" href="GoFish.jpeg" type="image/x-icon" />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link href='https://fonts.googleapis.com/css2?family=Gudea:wght@700&display=swap' rel='stylesheet'>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        font-family: 'Gudea', sans-serif;
+        font-style: 'normal';
+        font-weight: 'boldeer';
+        word-wrap: break-word;
+      }
+      
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      button{
+        background-color: #87dee7;
+      }
+
+      .container{
+        margin-top: 55px;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../resources/css/signin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../resources/css/style.css">
+  </head>
+
+
+  <body class="center text-center">
+    <div class="class container">
+
+      
+        <h1> Create Account </h1>
+
+      <form class="form-signin" action="createNewAccount" method="post">
+        <div>
+        </div>
+          <!-- ############################ -->
+          <!-- ########### Logo ########### -->
+          <!-- ############################ -->
+          <img
+            src="GoFish.jpeg"
+            alt=""
+            width="150px"
+            height="150px"
+          />
+          <br> <br>
+          <!-- ############################ -->
+          <!-- ########### USERNAME ########### -->
+          <!-- ############################ -->
+          <label for="username" class="sr-only">Username</label>
+            <input
+              type = "text"
+              id="username"
+              name="username"
+              class="form-control"
+              placeholder="Username"
+              required
+              autofocus
+            />
+            <br>
+          <!-- ############################ -->
+          <!-- ########### Password ########### -->
+          <!-- ############################ -->
+          <label for="password" class="sr-only">password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Password"
+              autofocus
+              required
+            />
+            <br>
+          <!-- ############################ -->
+          <!-- ########### Confirm Password ########### -->
+          <!-- ############################ -->
+          <label for="password2" class="sr-only">confirm password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            autofocus
+            required
+          />
+          <br>
+          <!-- ############################ -->
+          <!-- ########### Create Account  button ########### -->
+          <!-- ############################ -->
+          <button 
+            class="btn btn-lg btn-primary btn-block" 
+            type="submit" 
+            style="background-color: #87dee7"> 
+            CREATE ACCOUNT 
+          </button>
+        </form>
+        
+        <br>
+        <a class="text-muted" href="/Login.html">Already have an account? Login</a> 
+    
+    </div>
+  </body>
