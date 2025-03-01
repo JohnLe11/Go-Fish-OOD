@@ -1,0 +1,21 @@
+        // Set AI difficulty
+
+
+        //use template pattern for AI difficulty
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose AI difficulty:");
+        System.out.println("1. Easy");
+        System.out.println("2. Hard");
+        int difficulty = scanner.nextInt();
+        while (difficulty != 1 && difficulty != 2) {
+            System.out.print("Invalid input. Choose AI difficulty (1 or 2): ");
+            difficulty = scanner.nextInt();
+        }
+
+        // Generate game ID
+        Random random = new Random();
+        String gameID = String.format("%04d", random.nextInt(10000));
+        System.out.println("Game ID: " + gameID);
+
+
+        // Play game
